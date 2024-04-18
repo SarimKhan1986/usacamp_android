@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/roundedbutton8"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/connecttiletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/connectionnetconfigtitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/networktypetxt"
+        app:layout_constraintEnd_toEndOf="@+id/networktypetxt"
+        app:layout_constraintStart_toStartOf="@+id/networktypetxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/networktypetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connectionnetconfigwifi"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/connectretrybtn"
+        app:layout_constraintEnd_toEndOf="@+id/connectretrybtn"
+        app:layout_constraintStart_toStartOf="@+id/connectretrybtn"
+        app:layout_constraintTop_toBottomOf="@+id/connecttiletxt" />
+
+    <Button
+        android:id="@+id/connectretrybtn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/green_dark_radius_outline_weak"
+        android:text="@string/connectionnetsettingopen"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/networktypetxt"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/actionbar_top_space"
+        android:background="@color/white" >
+        <ImageButton
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:src="@drawable/newback"
+            android:onClick="onBack"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="活动中心"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14sdp"
+
+            android:layout_centerVertical="true"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_shape"
+        android:text = "敬请期待"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorWhite"
+        android:onClick="onActParent"
+        />
+
+    <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/standard_23"-->
+                <!--android:gravity="center">-->
+                <!--<ListView-->
+                    <!--android:id="@+id/listview_actcenter"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:choiceMode="singleChoice"-->
+                    <!--android:divider="@color/white"-->
+                    <!--android:dividerHeight="@dimen/standard_23"-->
+                    <!--android:visibility="gone"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginTop="@dimen/standard_23">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgview_nothing"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/nothing"-->
+                    <!--android:visibility="gone"/>-->
+            <!--</LinearLayout>-->
+        <!--</FrameLayout>-->
+</LinearLayout>

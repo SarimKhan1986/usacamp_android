@@ -1,0 +1,91 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/drawable-mdpi/menu_home_selector.xml" value="0.206" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/drawable-mdpi/rotatingprogressbar.xml" value="0.21" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/drawable-mdpi/roundedbutton.xml" value="0.263" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/drawable-mdpi/roundedbutton10.xml" value="0.263" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/drawable-mdpi/share_outline_red_tranparent_5.xml" value="0.23541666666666666" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/drawable-mdpi/share_outline_yello_qr.xml" value="0.23541666666666666" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/drawable-mdpi/sharecustomitembackground.xml" value="0.3974358974358974" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout-h1080dp-port/activity_share_custom.xml" value="0.2" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout-h1080dp-port/shareslider.xml" value="0.67" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout-h800dp-port/activity_share_custom.xml" value="1.0" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout-h800dp-port/shareslider.xml" value="2.0" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout-h900dp-port/activity_share_custom.xml" value="1.25" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout-h900dp-port/shareslider.xml" value="1.5" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.5" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/aboutlevelitem.xml" value="0.18469431380932022" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_about_levels.xml" value="0.18" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_about_us.xml" value="0.221875" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_aurora__password.xml" value="0.24473684210526317" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_banner_detail.xml" value="0.1628901239846088" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_bind.xml" value="0.1361842105263158" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_download_content.xml" value="0.18" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_learn.xml" value="0.1" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_learning_record.xml" value="0.16631038905515177" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_login.xml" value="0.24473684210526317" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_privacy.xml" value="0.13848684210526316" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_purchase_camp.xml" value="0.1628901239846088" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_setting.xml" value="0.5" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_share.xml" value="0.333786231884058" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_share_custom.xml" value="0.5" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_share_type.xml" value="0.333786231884058" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_speaking.xml" value="0.13848684210526316" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_speaking_intro.xml" value="0.18469431380932022" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_speaking_share.xml" value="0.2" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_splash.xml" value="0.13848684210526316" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_student_pattern.xml" value="0.33" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_switch_pattern.xml" value="0.5" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_system_test.xml" value="0.1628901239846088" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/activity_teacher_video.xml" value="0.18469431380932022" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/firstlogindlg.xml" value="0.33" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/fragment_learn.xml" value="0.2359375" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/fragment_speaking.xml" value="0.208203125" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/fragment_study.xml" value="0.2359375" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/item_slider_image.xml" value="0.3180846515604959" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/item_slider_video_small.xml" value="0.1628901239846088" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/item_teacher_video.xml" value="0.18469431380932022" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/layout_image_notice.xml" value="0.10130208333333333" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/layout_learn_menu.xml" value="0.24473684210526317" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/layout_learningrecord_item.xml" value="0.25" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/layout_progress_dlg.xml" value="0.3349673202614379" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/networkconnectiondlg.xml" value="0.25" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/orora_login.xml" value="0.2745961820851689" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/sharecustomslider.xml" value="0.333786231884058" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/shareslider.xml" value="0.25" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/verionupgradered.xml" value="0.16893564356435645" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/layout/versionupgradeprogressdlg.xml" value="0.1799145299145299" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/menu/navigation.xml" value="0.2" />
+        <entry key="..\:/CurrentAvailable/NewUsacamp/work/Project/usacamp/app/src/main/res/menu/signup_right_icon.xml" value="0.290625" />
+        <entry key="..\:/Work/Usacamp/Project/usacamp/app/src/main/res/drawable-mdpi/btn_fill_red.xml" value="0.296" />
+        <entry key="..\:/Work/Usacamp/Project/usacamp/app/src/main/res/drawable-mdpi/gray_trans_speaking.xml" value="0.2985" />
+        <entry key="..\:/Work/Usacamp/Project/usacamp/app/src/main/res/layout/activity_act_finish_level_test.xml" value="0.1546875" />
+        <entry key="..\:/Work/Usacamp/Project/usacamp/app/src/main/res/layout/activity_learn.xml" value="0.15052083333333333" />
+        <entry key="..\:/Work/Usacamp/Project/usacamp/app/src/main/res/layout/activity_setting.xml" value="0.23125" />
+        <entry key="..\:/Work/Usacamp/Project/usacamp/app/src/main/res/layout/activity_system_test.xml" value="0.1546875" />
+        <entry key="..\:/Work/Usacamp/Project/usacamp/app/src/main/res/layout/fragment_learn.xml" value="0.18802083333333333" />
+        <entry key="..\:/Work/Usacamp/Project/usacamp/app/src/main/res/layout/fragment_study.xml" value="0.18802083333333333" />
+        <entry key="..\:/Work/Usacamp/Project/usacamp/app/src/main/res/layout/layout_finish_lesson.xml" value="0.23072916666666668" />
+        <entry key="..\:/Work/Usacamp/Project/usacamp/app/src/main/res/layout/layout_learn_menu.xml" value="0.1546875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.14" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

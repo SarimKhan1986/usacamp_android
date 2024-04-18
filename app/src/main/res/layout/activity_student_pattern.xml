@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white"
+     android:clipToPadding="false"
+     android:padding="10dp"
+     tools:context=".activities.StudentPatternActivity">
+
+  <com.mikhaellopez.circularimageview.CircularImageView
+      android:id="@+id/scircularstudentpic"
+      android:layout_width="@dimen/_70sdp"
+      android:layout_height="@dimen/_70sdp"
+      android:layout_margin="@dimen/spacing_xsmall"
+      android:layout_marginStart="16dp"
+      app:civ_shadow_radius="3dp"
+      app:civ_border="true"
+      app:civ_shadow="true"
+      app:civ_shadow_color="#D5DDE1"
+      android:layout_marginTop="8dp"
+      android:src="@drawable/lucy_girl"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/simgmsg" />
+
+  <TextView
+      android:id="@+id/stxtname"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:text="Henry"
+      android:textColor="@color/black"
+      android:textSize="@dimen/_18sdp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/stxtage"
+      app:layout_constraintStart_toEndOf="@+id/scircularstudentpic"
+      app:layout_constraintTop_toTopOf="@+id/scircularstudentpic" />
+
+  <ImageView
+      android:id="@+id/simgchangechildinfo"
+      android:layout_width="@dimen/_16sdp"
+      android:layout_height="@dimen/_16sdp"
+      android:layout_marginStart="8dp"
+      app:layout_constraintBottom_toBottomOf="@+id/stxtname"
+      app:layout_constraintStart_toEndOf="@+id/stxtname"
+      app:layout_constraintTop_toTopOf="@+id/stxtname"
+      app:srcCompat="@drawable/snamedrawable" />
+
+  <TextView
+      android:id="@+id/stxtage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:background="@drawable/green_blue_radius_share"
+      android:paddingStart="@dimen/_5sdp"
+      android:paddingTop="@dimen/_2sdp"
+      android:paddingBottom="@dimen/_2sdp"
+      android:paddingEnd="@dimen/_5sdp"
+      android:text="TextView"
+      android:textColor="#FFFFFF"
+      android:textSize="@dimen/_10sdp"
+      app:layout_constraintBottom_toBottomOf="@+id/scircularstudentpic"
+      app:layout_constraintStart_toEndOf="@+id/scircularstudentpic"
+      app:layout_constraintTop_toBottomOf="@+id/stxtname" />
+
+  <TextView
+      android:id="@+id/stxtday"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:background="@drawable/green_blue_radius_share"
+      android:paddingStart="@dimen/_5sdp"
+      android:paddingTop="@dimen/_2sdp"
+      android:paddingBottom="@dimen/_2sdp"
+      android:paddingEnd="@dimen/_5sdp"
+      android:text="9dskdsdksj"
+      android:textColor="#FFFFFF"
+      android:textSize="@dimen/_10sdp"
+      app:layout_constraintBottom_toBottomOf="@+id/stxtage"
+      app:layout_constraintStart_toEndOf="@+id/stxtage"
+      app:layout_constraintTop_toTopOf="@+id/stxtage" />
+
+  <ImageView
+      android:id="@+id/simgmsg"
+      android:layout_width="@dimen/_20sdp"
+      android:layout_height="@dimen/_20sdp"
+      android:layout_marginTop="25dp"
+      android:layout_marginEnd="@dimen/_10sdp"
+      app:layout_constraintEnd_toStartOf="@+id/simgpattern"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/smsgicon" />
+
+  <ImageView
+      android:id="@+id/simgsetting"
+      android:layout_width="@dimen/_20sdp"
+      android:layout_height="@dimen/_20sdp"
+      android:layout_marginTop="25dp"
+      android:layout_marginEnd="@dimen/_14sdp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/ssettingicon" />
+
+  <ImageView
+      android:id="@+id/simgpattern"
+      android:layout_width="@dimen/_20sdp"
+      android:layout_height="@dimen/_20sdp"
+      android:layout_marginTop="25dp"
+      android:layout_marginEnd="@dimen/_10sdp"
+      app:layout_constraintEnd_toStartOf="@+id/simgsetting"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/sswitchicon" />
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="@dimen/_12sdp"
+      android:drawableStart="@drawable/stxtpointdrawable"
+      android:gravity="center"
+      android:text=" 学习积分·"
+      android:textSize="@dimen/_14sdp"
+      app:layout_constraintStart_toStartOf="@+id/scircularstudentpic"
+      app:layout_constraintTop_toBottomOf="@+id/scircularstudentpic" />
+
+  <TextView
+      android:id="@+id/stxtpoint"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="12000"
+      android:textColor="@color/black"
+      android:textSize="@dimen/_14sdp"
+      app:layout_constraintBottom_toBottomOf="@+id/textView6"
+      app:layout_constraintStart_toEndOf="@+id/textView6"
+      app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+  <TextView
+      android:id="@+id/textView8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:drawableStart="@drawable/stxtdaydrawable"
+      android:gravity="center"
+      android:text=" 剩余课时·"
+      android:textSize="@dimen/_14sdp"
+      app:layout_constraintBottom_toBottomOf="@+id/textView6"
+      app:layout_constraintStart_toEndOf="@+id/stxtpoint"
+      app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+  <TextView
+      android:id="@+id/stxtremian"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="3602"
+      android:textColor="@color/black"
+      android:textSize="@dimen/_14sdp"
+      app:layout_constraintBottom_toBottomOf="@+id/textView8"
+      app:layout_constraintStart_toEndOf="@+id/textView8"
+      app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+  <TextView
+      android:id="@+id/textView31"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="分级测试"
+      android:textColor="@color/black"
+      android:textSize="@dimen/_12sdp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/simgtest"
+      app:layout_constraintHeight_percent="0.3"
+      app:layout_constraintStart_toStartOf="@+id/simgtest"
+      app:layout_constraintTop_toBottomOf="@+id/simgtest" />
+
+  <ImageView
+      android:id="@+id/simglearnhistory"
+      android:layout_width="@dimen/_30sdp"
+      android:layout_height="@dimen/_30sdp"
+      android:clickable="true"
+      android:focusable="true"
+      android:src="@drawable/slearnhistoryicon"
+      app:layout_constraintEnd_toStartOf="@+id/simgpoint"
+      app:layout_constraintHeight_percent="0.6"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/simgtest"
+      app:layout_constraintTop_toTopOf="@+id/simgtest"
+      app:layout_constraintWidth_percent="0.3" />
+
+  <TextView
+      android:id="@+id/txtsystemtest"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="积分商城"
+      android:textColor="@color/black"
+      android:textSize="@dimen/_12sdp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/simgpoint"
+      app:layout_constraintStart_toStartOf="@+id/simgpoint"
+      app:layout_constraintTop_toBottomOf="@+id/simgpoint" />
+
+  <ImageView
+      android:id="@+id/simgtest"
+      android:layout_width="@dimen/_30sdp"
+      android:layout_height="@dimen/_30sdp"
+      android:layout_marginStart="@dimen/_16sdp"
+      android:layout_marginTop="@dimen/_14sdp"
+      android:clickable="true"
+      android:focusable="true"
+      app:layout_constraintEnd_toStartOf="@+id/simglearnhistory"
+      app:layout_constraintHeight_percent="0.6"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintHorizontal_chainStyle="spread_inside"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView6"
+      app:layout_constraintWidth_percent="0.3"
+      app:srcCompat="@drawable/newtexticon" />
+
+  <ImageView
+      android:id="@+id/simgshare"
+      android:layout_width="@dimen/_30sdp"
+      android:layout_height="@dimen/_30sdp"
+      android:layout_marginEnd="@dimen/_16sdp"
+      android:src="@drawable/sshareicon"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="0.6"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/simgpoint"
+      app:layout_constraintTop_toTopOf="@+id/simgpoint"
+      app:layout_constraintWidth_percent="0.3" />
+
+  <ImageView
+      android:id="@+id/simgpoint"
+      android:layout_width="@dimen/_30sdp"
+      android:layout_height="@dimen/_30sdp"
+      android:src="@drawable/spointicon"
+      app:layout_constraintEnd_toStartOf="@+id/simgshare"
+      app:layout_constraintHeight_percent="0.6"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/simglearnhistory"
+      app:layout_constraintTop_toTopOf="@+id/simglearnhistory"
+      app:layout_constraintWidth_percent="0.3" />
+
+  <TextView
+      android:id="@+id/txtintro2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="学习记录"
+      android:textColor="@color/black"
+      android:textSize="@dimen/_12sdp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/simglearnhistory"
+      app:layout_constraintHeight_percent="0.3"
+      app:layout_constraintStart_toStartOf="@+id/simglearnhistory"
+      app:layout_constraintTop_toBottomOf="@+id/simglearnhistory" />
+
+  <TextView
+      android:id="@+id/txtpurchase"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:fontFamily="@font/yuantiscregular"
+      android:text="分享打卡"
+      android:textColor="@color/black"
+      android:textSize="@dimen/_12sdp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/simgshare"
+      app:layout_constraintStart_toStartOf="@+id/simgshare"
+      app:layout_constraintTop_toBottomOf="@+id/simgshare" />
+
+  <androidx.viewpager2.widget.ViewPager2
+      android:id="@+id/svgbanner"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/_100sdp"
+      android:layout_marginTop="@dimen/_14sdp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+  <LinearLayout
+      android:id="@+id/scontainer"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/stitle" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.6"
+      tools:layout_constraintGuide_percent="0.6" />
+
+  <LinearLayout
+      android:id="@+id/stitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/_14sdp"
+      android:orientation="horizontal"
+
+      app:layout_constraintStart_toStartOf="@+id/svgbanner"
+      app:layout_constraintTop_toBottomOf="@+id/svgbanner">
+
+   <TextView
+       android:id="@+id/stxtlearn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:elevation="10dp"
+       android:text="开始学习" />
+
+   <TextView
+       android:id="@+id/stxtspeaking"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:visibility="invisible"
+       android:layout_marginStart="@dimen/_10sdp"
+       android:text="口语练习" />
+  </LinearLayout>
+ </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

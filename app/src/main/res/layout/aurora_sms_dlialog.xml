@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundedbutton8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收不到验证码？"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 1.请检查是否输入正确的手机号码\n
+2.检查手机是否停机\n
+3.请使用其他账号登录\n
+4.请联系官方客服"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:singleLine="false"/>
+        <TextView
+            android:id="@+id/txt_aurora_sms_dlg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="知道了"
+            android:layout_marginTop="20dp"
+            android:textColor="#1C9939"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

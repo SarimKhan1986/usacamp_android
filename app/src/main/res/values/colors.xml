@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#149F38</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBrightGreen">#DCF0DC</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreyDark">#797979</color>
+    <color name="colorBackgroundGrey">#800A0A0A</color>
+    <color name="colorArtBorder">#e2e2e2</color>
+    <color name="coloBbuttonOrenge">#FF9800</color>
+    <color name="colorgraytransparent">#70000000</color>
+
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+
+
+    <color name="colorbuttonFg">#199334</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_green">#ECF8EC</color>
+    <color name="red">#FF0000</color>
+    <color name="flame">#F08030</color>
+    <color name="green_light">#6acc45</color>
+    <color name="green_grass">#81BC60</color>
+    <color name="green_dark">#40B020</color>
+    <color name="green_dark_more">#0A640A</color>
+    <color name="brown_light">#FC8043</color>
+    <color name="gray_a">#A0A0A0</color>
+    <color name="gray_b">#6e6e6e</color>
+    <color name="gray_c">#E7E7E7</color>
+    <color name="transfer">#00000000</color>
+    <color name="yellowish">#FFA000</color>
+
+    <color name="parents_class_textcolor_green">#4CB523</color>
+    <color name="about_us_title_green">#4BB524</color>
+    <color name="bg_share_middle_green_dark">#53A030</color>
+
+</resources>

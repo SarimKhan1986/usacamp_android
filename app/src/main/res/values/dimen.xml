@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--genaral spacing-->
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_xmedium">7dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_smlarge">18dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+    <dimen name="spacing_xxxlarge">55dp</dimen>
+
+    <dimen name="actionbar_top_space">35dp</dimen>
+
+    <dimen name="learn_move_quiz">0dp</dimen>
+
+    <dimen name="learn_move_off">50dp</dimen>
+
+    <dimen name="standard_12">5dp</dimen>
+    <dimen name="standard_23">23dp</dimen>
+<!--    <dimen name="design_bottom_navigation_height" tools:override="true">80dp</dimen>-->
+</resources>

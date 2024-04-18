@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:minSdkVersion="33" android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:minSdkVersion="33" android:name="android.permission.READ_MEDIA_VIDEO" />
+<!--    <uses-permission android:minSdkVersion="33" android:name="android.permission.READ_MEDIA_AUDIO" />-->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+<!--    <uses-permission android:name="android.permission.BODY_SENSORS" />-->
+<!--    <uses-permission android:name="android.permission.READ_CONTACTS" />-->
+<!--    <uses-permission android:name="android.permission.WRITE_CONTACTS" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_DIALOG" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".activities.MyApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/appicon"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/appicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.DownloadContentAct"
+            android:exported="false"
+            android:label="@string/title_activity_download_content"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.SwitchPatternActivity"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".activities.StudentPatternActivity"
+            android:allowTaskReparenting="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.FinishActivity" />
+        <activity
+            android:name=".activities.TeacherVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SpeakingHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SpeakingShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SpeakingResultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SpeakingIntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SpeakingActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/noActionBar" />
+        <activity android:name=".activities.SystemTestAct" />
+        <activity android:name=".activities.AuroraSingupPassword" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/sharecustomitem" />
+
+        <activity
+            android:name=".activities.ShareCustom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ShareConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ShareType"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PasswordChange"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PasswordReset"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DeleteUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.payhistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PresentWebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CampIntroduce"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.About_levels"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AgreementAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PrivacyAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.vipmember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BannerDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.articledetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.parent_category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PayConfirmAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activities.FinishTrialAct"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".activities.ActUsePointForPurchase" />
+        <activity
+            android:name=".activities.ActFinishLevelTest"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activities.FinishTestAct"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activities.MessageDetailAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FInishQuiz"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activities.H5Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ActRuleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyCampActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.VideoActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.ModifyChildProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ActDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ActCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LearningRecordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyPointActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CustomServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ServiceAgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ParentClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.WechatPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ExperienceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PurchaseSuccess"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.mycampopoup"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activities.PurchaseConfirm"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activities.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VersionUpgrade"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activities.PurchaseCampActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddChildActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WeChatLoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AuroraLogin"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LearnActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:allowTaskReparenting="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ActBuyLevelInHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activities.ActDeleteUserConfirm"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".activities.MessageCenterAct"
+            android:screenOrientation="portrait" /> <!-- since 2.0.0 optional 可选项，使用一键登录功能必须添加 -->
+        <!-- since 2.1.1 optional 可选项，通过screenOrientation设置授权页面横竖屏展示 -->
+        <!-- <activity -->
+        <!-- android:name="com.cmic.sso.sdk.activity.OAuthActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden|screenSize" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:launchMode="singleTop"> -->
+        <!-- </activity> -->
+        <!-- &lt;!&ndash; since 2.0.0 optional 可选项，使用一键登录功能必须添加  &ndash;&gt; -->
+        <!-- &lt;!&ndash; since 2.1.1 optional 可选项，通过screenOrientation设置授权页面横竖屏展示  &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name="com.cmic.sso.sdk.activity.LoginAuthActivity" -->
+        <!-- android:theme="@android:style/Theme.Holo.NoActionBar" -->
+        <!-- android:configChanges="orientation|keyboardHidden|screenSize" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:launchMode="singleTop"> -->
+        <!-- </activity> -->
+        <!-- &lt;!&ndash; since 2.0.0 optional 可选项，使用一键登录功能必须添加  &ndash;&gt; -->
+        <!-- &lt;!&ndash; since 2.1.1 optional 可选项，通过screenOrientation设置授权页面横竖屏展示  &ndash;&gt; -->
+        <!-- <activity android:name="cn.jiguang.verifysdk.CtLoginActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden|screenSize" -->
+        <!-- android:theme="@android:style/Theme.Holo.NoActionBar" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:launchMode="singleTop"> -->
+        <!-- </activity> -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="133ec4c0ce3ffadfc4951059" />
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+<!--        <meta-data-->
+<!--            android:name="UMENG_CHANNEL"-->
+<!--            android:value="jdf1" />-->
+
+        <receiver android:name=".services.PowerButtonListenr"
+            android:exported="false">
+            <intent-filter
+                android:enabled="true"
+                android:exported="false">
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.ScreenOnOffService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.ahmedaljoaid.powerbuttonlistener.services.ScreenOnOffService" />
+            </intent-filter>
+        </service> <!-- <receiver android:name=".MyBroadcastReceiver"  android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED"/> -->
+        <!-- <action android:name="android.intent.action.INPUT_METHOD_CHANGED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

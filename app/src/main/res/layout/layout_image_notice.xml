@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_notice_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_trans_radius"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="20dp"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/image_notice"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/check_mark"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/text_notice_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="验证码已发"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

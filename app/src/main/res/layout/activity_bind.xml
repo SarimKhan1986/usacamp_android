@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/actionbar_top_space"
+        android:background="@color/white">
+        <ImageButton
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:src="@drawable/newback"
+            android:onClick="onBack"/>
+    </RelativeLayout>
+    <RadioGroup android:id="@+id/toggleGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <RadioButton
+            android:id="@+id/btn_bind_pass"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="@drawable/login_toggle_selector1"
+            android:text="密码登录"
+            android:onClick="onToggleBind"
+            android:textAlignment="center"
+            android:button="@null"
+            android:checked="true"
+            />
+        <RadioButton android:id="@+id/btn_bind_sms"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:background="@drawable/login_toggle_selector"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:button="@null"
+            android:onClick="onToggleBind"
+            android:textAlignment="center"
+            android:text="验证码登录"
+
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lgimage1"
+                android:layout_marginLeft="-50dp"
+                />
+            <TextView
+                android:id="@+id/lgtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="游美英语"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/grey_90"/>
+            <LinearLayout
+                android:layout_below="@id/lgtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/lgleft"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="轻松学会英语"
+                    android:textSize="16sp"
+                    android:textColor="@color/grey_60"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/lgright"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bind_sms_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="30dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_bind_phonenumber_sms"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:hint="  手机号码"
+            android:inputType="phone"
+            android:background="@drawable/lgedittextback"
+            android:drawableLeft="@drawable/lgicon2"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edit_bind_verify"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.6"
+                android:paddingStart="10dp"
+                android:drawableLeft="@drawable/lgicon1"
+                android:background="@drawable/lgedittextback"
+                android:selectAllOnFocus="true"
+                android:inputType="numberDecimal"
+                android:hint="  验证码"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/lobtn_bind_verify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="10dp"
+
+                android:background="@drawable/green_dark_radius_outline_weak"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/text_bind_get_verify_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获取验证码"
+                    android:textColor="@color/green_dark_more"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bind_pass_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="30dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_bind_phonenumber_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:hint="  手机号码"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:background="@drawable/lgedittextback"
+            android:drawableLeft="@drawable/lgicon2"
+            android:selectAllOnFocus="true"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/lgedittextback"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <EditText
+                android:id="@+id/edit_bind_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:paddingStart="10dp"
+                android:drawableLeft="@drawable/lgicon3"
+                android:background="@color/white"
+                android:selectAllOnFocus="true"
+
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="  密码"
+                android:textSize="14sp"
+                />
+
+            <ToggleButton
+                android:id="@+id/tg_bind_pass"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:background="@drawable/login_pass_selector"
+                android:checked="false"
+                android:textOn=""
+                android:onClick="onTogglePassword"
+                android:textOff=""
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码？"
+                android:onClick="onGoToChangePWD"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:textColor="@color/black"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码"
+                android:paddingStart="5dp"
+                android:gravity="center_vertical"
+                android:button="@drawable/login_check_selector"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_bind"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/roundedbutton1"
+                android:onClick="onBind"
+                android:text="登录"
+                android:textColor="@color/colorWhite" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundedbutton17"
+                android:onClick="onSignup"
+                android:text="新用户注册"
+                android:textColor="@color/green_dark" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="代表您同意"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="游美英语用户协议"
+                    android:textColor="@color/green_dark"
+                    android:textSize="12sp"
+                    android:onClick="gotoagreement"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="和"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="用户隐私协议"
+                    android:textColor="@color/green_dark"
+                    android:textSize="12sp"
+                    android:onClick="gotoprivacy"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            >
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+

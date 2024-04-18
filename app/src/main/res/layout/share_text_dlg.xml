@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:padding="10dp"
+    android:background="@drawable/sharetxtdlgbackground"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一键复制邀请语，更容易邀请成功~"
+        android:textSize="16dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_a"
+        android:layout_margin="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sharetxtimag1"
+            />
+        <TextView
+            android:id="@+id/sharetxttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/sharetxtimage2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=" 换一条"
+
+            android:textColor="@color/green_dark"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/sharemsgtxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="游美英语真是挺好的，性价比还高，在家里随时都能学，不需要往外跑更不用等着跟老师约时间了，关键孩子还挺喜欢学！"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/sharemsgapply"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundedbutton1"
+        android:text="一键复制"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+</LinearLayout>
+

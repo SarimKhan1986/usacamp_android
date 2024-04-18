@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    android:background="@drawable/roundedbutton11"
+    app:cardUseCompatPadding="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.usacamp.utils.RoundedImageView
+            android:id="@+id/parentitemimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/parentitemimage1"
+            app:riv_corner_radius="10dp" />
+
+        <com.usacamp.utils.RoundedImageView
+            android:id="@+id/parentitemimpimng"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:riv_corner_radius_top_right="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/intro_recommend"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/gray_trans"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/parentitemtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:fontFamily="@font/yuantiscregular"
+                android:text="孩子如何摆脱 “哑巴英语”"/>
+            <TextView
+                android:id="@+id/parentitemcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/grey_20"
+                android:fontFamily="@font/yuantiscregular"
+                android:text="随着全球经济一体化的发展，英语作为一种交流的工具，在我们的生..."/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

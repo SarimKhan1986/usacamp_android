@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/green_dark_radius"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/menu"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textStyle="italic|bold"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:background="@color/colorBrightGreen">
+
+        <GridView
+            android:id="@+id/grid_lessons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/grey_80"/>
+        <LinearLayout
+            android:id="@+id/lobtn_test"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green_dark_radius_trans_outline"
+            android:gravity="center"
+            android:onClick="DoTest">
+
+            <TextView
+                android:id="@+id/lobtn_test_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                android:textColor="@color/green_dark"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/_50sdp"
+    tools:context=".activities.ServiceAgreementActivity">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="35dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:onClick="onBack"
+            android:src="@drawable/newback"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:gravity="center"
+            android:text="个人中心"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/llayout_setting"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/newprofilesettingicon" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spacing_mlarge"
+        android:paddingRight="@dimen/spacing_mlarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/scircularprofilepic"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/spacing_xsmall"
+                    android:src="@drawable/lucy_girl"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="3dp"
+                    app:civ_shadow_color="#D5DDE1"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:weightSum="3"
+                    android:layout_toRightOf="@+id/scircularprofilepic"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_profilename"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="@dimen/_120sdp"
+                            android:singleLine="true"
+                            android:text="Name"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/txt_profilebirthday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/green_blue_radius_share"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_2sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_2sdp"
+                                android:singleLine="true"
+                                android:text="2019-10-21"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/roundedbutton11">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/spacing_xmedium">
+
+                                <TextView
+                                    android:id="@+id/txt_profile_leftDay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="0 天"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="剩余课时"
+                                    android:textColor="@color/grey_60"
+                                    android:textSize="@dimen/_10sdp" />
+
+                            </LinearLayout>
+                            <!--                                <View-->
+                            <!--                                    android:layout_width="1dp"-->
+                            <!--                                    android:layout_height="match_parent"-->
+                            <!--                                    android:layout_marginTop="5dp"-->
+                            <!--                                    android:layout_marginBottom="5dp"-->
+                            <!--                                    android:layout_gravity="center_vertical"-->
+                            <!--                                    android:background="@color/grey_20"/>-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical"
+                                android:padding="@dimen/spacing_xmedium">
+
+                                <TextView
+                                    android:id="@+id/txt_class"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="0 级"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="当前学习级别"
+                                    android:textColor="@color/grey_60"
+                                    android:textSize="@dimen/_10sdp" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:id="@+id/btn_modify_child"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/newprofilearrowicon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/presentrt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profilebanner1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/presentrt">
+
+        <RelativeLayout
+            android:id="@+id/llayout_mypoint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="我的积分"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:background="@color/transparent"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_c" />
+
+        <RelativeLayout
+            android:id="@+id/llayout_learningrecord"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="学习记录"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:background="@color/transparent"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_c" />
+
+        <RelativeLayout
+            android:id="@+id/llayout_share"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="邀请有奖"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/profileicon1" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:background="@color/transparent"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_c" />
+
+        <RelativeLayout
+            android:id="@+id/llypointstore"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="积分商城"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/profileicon2" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:background="@color/transparent"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_c" />
+
+        <RelativeLayout
+            android:id="@+id/llypayhistory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="订单信息"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:background="@color/transparent"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_c" />
+
+        <RelativeLayout
+            android:id="@+id/llayout_actcenter"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="活动中心"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:background="@color/transparent"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_c" />
+
+        <RelativeLayout
+            android:id="@+id/llayout_customservice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="联系客服"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:background="@color/transparent"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_c" />
+
+        <RelativeLayout
+            android:id="@+id/llayout_report"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="问题反馈"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的反馈让我们更好" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:background="@color/transparent"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/arrow_right" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

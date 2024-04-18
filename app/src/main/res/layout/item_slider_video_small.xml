@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rtimage"
+            android:layout_width="match_parent"
+            android:layout_weight="0.7"
+            android:layout_height="0dp">
+            <ImageView
+                android:id="@+id/img_main_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                 />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                android:background="@drawable/mainvideoplaypng"
+                android:clickable="false" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="2dp"
+            android:layout_below="@id/rtimage"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_main_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:singleLine="true"
+                android:textSize="@dimen/_12sdp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:fontFamily="@font/yuantiscregular"
+                android:textColor="@color/colorBlack"
+                />
+
+            <TextView
+                android:id="@+id/text_main_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/yuantiscregular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorGreyDark"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

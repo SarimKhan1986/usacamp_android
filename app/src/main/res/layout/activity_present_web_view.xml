@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PresentWebView">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/actionbar_top_space"
+        android:background="@color/white">
+        <ImageButton
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:src="@drawable/newback"
+            android:onClick="onBack"/>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="课程选择"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                android:textSize="@dimen/_14sdp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:gravity="center"-->
+<!--                />-->
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/presentwebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_top_space"
+        android:id="@+id/about_space"
+        android:background="@color/gray_c"
+        />
+    <RelativeLayout
+        android:id="@+id/abouttitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/colorWhite"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:layout_below="@id/about_space">
+
+        <ImageButton
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:onClick="onBack"
+            android:src="@drawable/newback" />
+
+        <TextView
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="课程解读"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/about_space1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_40"
+        android:layout_below="@+id/abouttitlebar"
+        />
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/about_space1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/level1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onButtonCamp"
+                android:text="camp 1"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:background="@color/gray_c"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:onClick="onButtonCamp"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:text="camp 2"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:onClick="onButtonCamp"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:text="camp 3"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:onClick="onButtonCamp"
+                android:text="camp 4"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:onClick="onButtonCamp"
+                android:text="camp 5"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:onClick="onButtonCamp"
+                android:text="camp 6"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:onClick="onButtonCamp"
+                android:text="camp 7"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:onClick="onButtonCamp"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:text="camp 8"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:onClick="onButtonCamp"
+                android:text="camp 9"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:onClick="onButtonCamp"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:text="camp 10"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:onClick="onButtonCamp"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:text="camp 11"
+                android:textColor="@xml/buttton_selector" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_c"
+                android:onClick="onButtonCamp"
+                android:layout_marginHorizontal="@dimen/_1sdp"
+                android:text="camp 12"
+                android:textColor="@xml/buttton_selector" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/horizontalScrollView"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/spacing_middle"
+        app:spanCount="3" />
+</RelativeLayout>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/actionbar_top_space"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:onClick="onBack"
+            android:src="@drawable/newback" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="@dimen/spacing_medium"
+        android:paddingRight="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            >
+
+            <LinearLayout
+                android:id="@+id/llayout_serviceagreement"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="查看用户服务协议"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/_12sdp"
+                    app:fontFamily="sans-serif-medium" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        app:tint="@color/grey_40"
+                        app:srcCompat="@drawable/arrow_right" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5" />
+
+            <LinearLayout
+                android:id="@+id/llayout_ser"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="隐私协议"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/_12sdp"
+                    app:fontFamily="sans-serif-medium" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        app:tint="@color/grey_40"
+                        app:srcCompat="@drawable/arrow_right" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5" />
+
+            <LinearLayout
+                android:id="@+id/llayout_aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="关于游美英语"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/_12sdp"
+                    app:fontFamily="sans-serif-medium" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        app:tint="@color/grey_40"
+                        app:srcCompat="@drawable/arrow_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5" />
+
+            <LinearLayout
+                android:id="@+id/llayout_deleteuser"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="注销帐号"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/_12sdp"
+                    app:fontFamily="sans-serif-medium" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        app:tint="@color/grey_40"
+                        app:srcCompat="@drawable/arrow_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="绑定微信"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/_12sdp"
+                    app:fontFamily="sans-serif-medium" />
+
+                <Button
+                    android:id="@+id/setting_wechat_bind"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/roundedbutton21"
+                    android:elevation="5dp"
+                    android:text="已绑定"
+                    android:textColor="@color/grey_40" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5" />
+
+            <LinearLayout
+                android:id="@+id/llayout_resetpass"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="修改/设置登陆密码"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/_12sdp"
+                    app:fontFamily="sans-serif-medium" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        app:tint="@color/grey_40"
+                        app:srcCompat="@drawable/arrow_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="@color/grey_5" />-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/versionLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingLeft="@dimen/spacing_large"-->
+<!--                android:paddingRight="@dimen/spacing_large">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/spacing_large"-->
+<!--                    android:layout_marginRight="@dimen/spacing_large"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="版本更新"-->
+<!--                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"-->
+<!--                    android:textColor="@color/grey_80"-->
+<!--                    android:textSize="@dimen/_14sdp"-->
+<!--                    app:fontFamily="sans-serif-medium" />-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="20dp">-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/versionNotice"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@color/transparent"-->
+<!--                        android:visibility="invisible"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        app:srcCompat="@drawable/circlenoticeicon" />-->
+<!--                </RelativeLayout>-->
+<!--            </LinearLayout>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5" />
+
+            <LinearLayout
+                android:id="@+id/llayout_pattern"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:onClick="onLogout"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="切换模式"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/_12sdp"
+                    app:fontFamily="sans-serif-medium" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/sstudenticon" />
+
+                    <TextView
+                        android:id="@+id/stxtpattern"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center_vertical"
+                        android:text=" 当前模式为学生模式"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        app:tint="@color/grey_40"
+                        app:srcCompat="@drawable/arrow_right" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5" />
+<!--            <LinearLayout-->
+<!--                android:id="@+id/llayout_mode"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:visibility="visible"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:weightSum="1"-->
+<!--                android:paddingLeft="@dimen/spacing_large"-->
+<!--                android:paddingRight="@dimen/spacing_large">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="OfflineMode"-->
+<!--                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"-->
+<!--                    android:textColor="@color/grey_80"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    app:fontFamily="sans-serif-medium" />-->
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/offlineModeCheckBox"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginRight="@dimen/_20sdp"/>-->
+<!--                <Button-->
+<!--                    android:id="@+id/offlineContentRemove"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="Remove"-->
+<!--                    android:layout_marginRight="@dimen/_10sdp"/>-->
+
+<!--&lt;!&ndash;                <Switch&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_weight="0.5"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:thumb="@drawable/downloadthumb"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:track="@drawable/bg_track"&ndash;&gt;-->
+<!--&lt;!&ndash;                    tools:ignore="UseSwitchCompatOrMaterialXml" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/offlineContentRemove"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="@drawable/removecachegray"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="清除缓存"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_weight="0.5"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="@dimen/_12sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginRight="@dimen/_10sdp"/>&ndash;&gt;-->
+<!--            </LinearLayout>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:onClick="onLogout"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="退出登录"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/_12sdp"
+                    app:fontFamily="sans-serif-medium" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    app:tint="@color/grey_40"
+                    app:srcCompat="@drawable/arrow_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

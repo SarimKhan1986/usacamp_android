@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/actionbar_top_space"
+        android:background="@color/white">
+
+        <ImageButton
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:src="@drawable/newback"
+            android:onClick="onBack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:onClick="DoSkipStep"
+            android:text="跳过"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        >
+
+        <TextView
+            android:id="@+id/lgtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="填写孩子信息"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/grey_90"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp">
+        <EditText
+            android:id="@+id/edt_addchild_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:theme="@style/EditTextTheme"
+            android:hint="@string/edit_text_child_name_hint"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_addchild_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:theme="@style/EditTextTheme"
+                android:hint="@string/edit_text_child_birth_hint"
+                android:gravity="center_vertical"
+                android:inputType="date"
+                android:paddingStart="10dp"
+                android:focusableInTouchMode="false"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/toggleGroup"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal" >
+
+                <ToggleButton
+                    android:id="@+id/tbtn_addchild_boy"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textOn=""
+                    android:textOff=""
+                    android:checked="true"
+                    android:onClick="onToggle"
+                    android:background="@drawable/login_toggle_selector"
+                    />
+
+                <ToggleButton
+                    android:id="@+id/tbtn_addchild_girl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textOn=""
+                    android:textOff=""
+                    android:onClick="onToggle"
+                    android:background="@drawable/login_toggle_selector1"
+                    />
+            </RadioGroup>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_addchild_increase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/gray_radius_aurora"
+            android:onClick="onAddChild"
+            android:text="完成"
+            android:enabled="false"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+</LinearLayout>

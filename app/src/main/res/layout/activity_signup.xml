@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/actionbar_top_space"
+        android:background="@color/white">
+
+        <ImageButton
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:src="@drawable/newback"
+            android:onClick="onBack"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lgimage1"
+            android:layout_marginLeft="-50dp"
+            />
+        <TextView
+            android:id="@+id/lgtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="填写手机号及密码"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/grey_90"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/sms_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="30dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_signup_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:hint="  手机号码"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:background="@drawable/lgedittextback"
+            android:drawableLeft="@drawable/lgicon2"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edit_signup_verifycode"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.6"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/lgicon1"
+                android:background="@drawable/lgedittextback"
+                android:selectAllOnFocus="true"
+                android:inputType="numberDecimal"
+                android:hint="  验证码"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/lobtn_login_verify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:onClick="onGetSignUpVerifyCode"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/green_dark_radius_outline_weak"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/text_get_verifycode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获取验证码"
+                    android:textColor="@color/green_dark_more"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/lgedittextback"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <EditText
+                android:id="@+id/edit_signup_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:paddingStart="10dp"
+                android:drawableLeft="@drawable/lgicon3"
+                android:background="@color/white"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="  设置新密码"
+                android:textSize="14sp"
+                />
+
+            <ToggleButton
+                android:id="@+id/tg_password"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:background="@drawable/login_pass_selector"
+                android:checked="false"
+                android:onClick="onTogglePassword"
+                android:textOn=""
+                android:textOff=""
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="请设置8-16位密码，密码可由字母和数字构成"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/lgedittextback"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <EditText
+                android:id="@+id/edit_signup_pass_again"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:singleLine="true"
+                android:paddingStart="10dp"
+                android:drawableLeft="@drawable/lgicon3"
+                android:background="@color/white"
+                android:selectAllOnFocus="true"
+                android:inputType="textPassword"
+                android:hint="  重复新密码"
+                android:textSize="14sp"
+                />
+
+            <ToggleButton
+                android:id="@+id/tg_password_again"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:background="@drawable/login_pass_selector"
+                android:checked="false"
+                android:onClick="onTogglePasswordAgain"
+                android:textOn=""
+                android:textOff=""
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:onClick="onSignUpPerform"
+            android:background="@drawable/roundedbutton1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

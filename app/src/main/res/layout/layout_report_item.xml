@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:background="@drawable/roundedbutton10"
+    android:layout_height="80dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:id="@+id/lyt_add_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="60sp"/>
+        </LinearLayout>
+
+        <com.usacamp.utils.RoundedImageView
+            android:id="@+id/img_report_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:riv_corner_radius="10dip"
+            />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_delete_report"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img_cross_marker"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

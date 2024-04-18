@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_message_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_trans_radius"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="30dp"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="请输入正确的\n手机号"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

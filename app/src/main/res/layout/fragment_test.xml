@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/actionbar_top_space"
+        android:background="@color/white">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:src="@drawable/newback"
+            android:visibility="gone"
+            android:onClick="onBack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="训练营"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/layout_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trainsectitle1"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/testfragemnettxt1back"
+                    android:text="什么是训练营"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/trainseccontent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:textSize="16sp"
+                    android:letterSpacing="0.1"
+                    android:lineSpacingExtra="3dp"
+                    android:text = "游美英语训练营指在传递先进、科学的学习理念，体验全新浸泡式情景互动课程。根据英语学龄和基础的不同分为启蒙训练营和初级训练营，专业教师团队制定21天学习计划并提供全程辅导：布置学习内容、传授学习方法、培养学习习惯、解答学习问题。
+启蒙训练营：培养兴趣、建立自信、带领学员走进英语的世界。
+初级训练营：传授方法、培养习惯，让英语逐步成为生活中的一部分。"
+                    android:background="@drawable/white_radius_outline"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/trainingbutton"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/testfragementbutton1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="点击查看，立即入营"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/testfragemnettxt1back"
+                    android:text="学员风采展示"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_radius_outline"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        >
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/trainingsec2viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp" />
+
+                        <LinearLayout
+                            android:id="@+id/trainingsec2ly"
+                            android:layout_below="@id/trainingsec2viewpager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/testfragemnettxt1back"
+                    android:text="入营须知"
+                    android:gravity="center"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:letterSpacing="0.1"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:layout_below="@id/trainsectitle1"
+                    android:text = "·训练营期间老师会在每天上午将学习及打卡任务发至微信群中，学员可按照所布置的任务使用app进行学习，家长请监督学员完成学习任务并配合拍摄及打卡工作
+·英语学习的初期，请各位家长不要强制学员进行跟读或开口讲英语、不要纠正发音，完成好监督、鼓励和陪伴的工作，帮助学员养成良好的学习习惯、掌握正确的学习方法，努力成为孩子学习英语过程中的好伙伴。
+*注意：保证孩子每天20分钟时长，家长能陪伴身边，能按时完成训练营老师布置的作业。"
+                    android:background="@drawable/white_radius_outline"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

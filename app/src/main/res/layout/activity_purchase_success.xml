@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PurchaseCampActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/actionbar_top_space"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="戳我购课"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 完成"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="onGoToHome"
+                android:textSize="@dimen/_14sdp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:weightSum="1"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/henry_symbol_phone"
+                android:paddingTop="30dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="恭喜您成功购买课程~"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.15"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:id="@+id/getpointtxt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:text="获得2000积分"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundedbutton9"
+                android:text="马上学习"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:onClick="gotolearn"/>
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_outline_green1"
+                android:textColor="@color/parents_class_textcolor_green"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="查看我的账户信息"
+                android:onClick="gotoprofile"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
