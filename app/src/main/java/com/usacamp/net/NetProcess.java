@@ -293,6 +293,11 @@ public class NetProcess {
         return 1;
     }
 
+    public int getActivityRule(String strFunc, String strParameters){
+        ThreadPoolUtils.execute(new HttpPostThread(mhandler, strFunc, strParameters, RequestReturnCode.REQ_getActivityRule));
+        return 1;
+    }
+
     public int getSharePointValue(  String strFunc, String strParameters){
         ThreadPoolUtils.execute(new HttpPostThread(mhandler, strFunc, strParameters, RequestReturnCode.REQ_getSharePointValue));
         return 1;
@@ -565,6 +570,10 @@ public class NetProcess {
                         parseJsonForMainProblemAction(jsonObject);
                         //parseJsonForAboutUsAction(jsonObject);
                         //strReturn = parseJsonForCustomServiceAction(jsonObject);
+                    }
+                    else if (msg.what == RequestReturnCode.REQ_getActivityRule)
+                    {
+                        parseJsonForActivityRule(jsonObject);
                     }else if (msg.what == RequestReturnCode.REQ_getSharePointValue)
                     {
                         parseJsonForAboutUsAction(jsonObject);
@@ -1307,6 +1316,19 @@ public class NetProcess {
 
 	    return "";
     }
+
+    private String parseJsonForActivityRule(JSONObject jsonObject) throws  JSONException{
+        String mState = jsonObject.getString("errcode");
+        if (mState == null)
+            return "错误";
+        if (mState.equals("0"))
+        {
+            String strConfig = jsonObject.getString("info");
+            MyApplication.getInstance().strActivityRuleLink = strConfig;
+        }
+        return "";
+    }
+
     private String parseJsonForServiceAgreementAction(JSONObject jsonObject) throws JSONException{
         String mState = jsonObject.getString("errcode");
         if (mState == null)

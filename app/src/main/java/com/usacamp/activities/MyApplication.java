@@ -105,6 +105,8 @@ public class MyApplication extends Application implements Application.ActivityLi
 
     public  String strPhoneNumber = "";
 
+    public  String strActivityRuleLink = "https://www.usacamp.cn/Wechat/h5_playrule";
+
     public void killActivities(Set<Class<?>> activitiesToRemove) {
         for (Activity stackActivity : runningActivities) {
             if (activitiesToRemove.contains(stackActivity.getClass())) {

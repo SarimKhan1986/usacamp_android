@@ -28,7 +28,20 @@ public class ActRuleActivity extends BaseActivity {
         myBrowser.addJavascriptInterface(myJavaScriptInterface, "AndroidFunction");
 
         myBrowser.getSettings().setJavaScriptEnabled(true);
-        myBrowser.loadUrl("https://dev.usacamp.cn/uscamp/Wechat/h5_playrule");
+
+        if(MyApplication.getInstance().strActivityRuleLink != "")
+        {
+            myBrowser.loadUrl(MyApplication.getInstance().strActivityRuleLink);
+//            myBrowser.loadUrl("https://dev.usacamp.cn/uscamp/Wechat/h5_playrule");
+        }
+    }
+
+    private void onLevelIntroduce()
+    {
+        String strrequestparameter ="param=activity_rule";
+        MyApplication.mNetProc.getConfig("getConfig" , strrequestparameter );
+//        Intent introAct =  new Intent(getContext(), CampIntroduce.class);
+//        getContext().startActivity(introAct);
     }
 
     public void onClose(View view) { finish(); }

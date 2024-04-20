@@ -270,6 +270,9 @@ public class MainActivity extends BaseActivity {
         goFragmentHome();
 
         versionUpdate();
+
+        String strrequestparameter ="param=activity_rule";
+        MyApplication.mNetProc.getActivityRule("getConfig" , strrequestparameter );
     }
     public void showStudyButton()
     {

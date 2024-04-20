@@ -58,6 +58,8 @@ public class RequestReturnCode {
     public static final int REQ_netErrorLog = 168;
     public static final int REQ_getEncryptKey = 170;
 
+    public static final int REQ_getActivityRule = 171;
+
 //    public static final int REQ_getArticleType2=147;
 //    public static final int REQ_getArticleType3=147;
 //    public static final int REQ_getArticleType4=147;
