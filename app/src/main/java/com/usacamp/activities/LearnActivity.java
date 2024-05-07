@@ -134,6 +134,9 @@ public class LearnActivity extends BaseActivity {
     private final boolean[] marrLessongAvailable = new boolean[Constants.LESSON_COUNT];
     private final boolean[] marrPartAvailable = new boolean[Constants.BIG_PARTS_COUNT];
 
+    private int partPoint = 0;
+    private int partQuestion = 0;
+
     String mstrCurrentUrl;
     LessonItem mCurrLesson;
 
@@ -1153,6 +1156,21 @@ public class LearnActivity extends BaseActivity {
     boolean isTestAgain = false;
     public void OnRefreshLevelTest(View v)
     {
+                totalPot -= partPoint;
+                String correctedCountStr = String.format("%03d", totalPot);
+                Log.d("correctedCountStr", correctedCountStr);
+                ((TextView) findViewById(R.id.testscoretxt1)).setText(correctedCountStr.substring(0, 1));
+                ((TextView) findViewById(R.id.testscoretxt2)).setText(correctedCountStr.substring(1, 2));
+                ((TextView) findViewById(R.id.testscoretxt3)).setText(correctedCountStr.substring(2, 3));
+
+                totalQuestion -= partQuestion;
+                String questionCountStr = String.format("%03d", totalQuestion);
+                Log.d("testQuestionCount", questionCountStr);
+                ((TextView) findViewById(R.id.testquestioncount)).setText(questionCountStr + "/100");
+
+                partPoint = 0;
+                partQuestion = 0;
+                
         findViewById(R.id.leveltestbtn).setVisibility(View.GONE);
         isTestAgain = true;
         webView.loadUrl(MyApplication.mNetProc.mLoginUserInf.mlistLevelTestUrl.get(levelTestposition).mstrPath);
@@ -1322,6 +1340,10 @@ public class LearnActivity extends BaseActivity {
                     ((LearnActivity)MyApplication.getInstance().getCurrentActivity()).finishLevelTest();
 
                 } else {
+
+                    partPoint = Integer.parseInt(point);
+                    partQuestion = Integer.parseInt(questionCount);
+
                     if(!isTestAgain) {
 //                        totalPot += Integer.parseInt(point);
 //                        totalQuestion += Integer.parseInt(questionCount);
@@ -1349,7 +1371,8 @@ public class LearnActivity extends BaseActivity {
 
         @JavascriptInterface
         public void AddCorrectPoint() {
-            if (!isTestAgain) {
+//            if (!isTestAgain)
+            {
                 totalPot += 1;
                 String correctedCountStr = String.format("%03d", totalPot);
                 Log.d("correctedCountStr", correctedCountStr);
@@ -1357,18 +1380,20 @@ public class LearnActivity extends BaseActivity {
                 ((TextView) findViewById(R.id.testscoretxt2)).setText(correctedCountStr.substring(1, 2));
                 ((TextView) findViewById(R.id.testscoretxt3)).setText(correctedCountStr.substring(2, 3));
 
-            }else{
-                totalPot = 0;
-                String correctedCountStr = String.format("%03d", totalPot);
-                Log.d("correctedCountStr", correctedCountStr);
-                ((TextView) findViewById(R.id.testscoretxt1)).setText(correctedCountStr.substring(0, 1));
-                ((TextView) findViewById(R.id.testscoretxt2)).setText(correctedCountStr.substring(1, 2));
-                ((TextView) findViewById(R.id.testscoretxt3)).setText(correctedCountStr.substring(2, 3));
             }
+//            else{
+//                totalPot = 0;
+//                String correctedCountStr = String.format("%03d", totalPot);
+//                Log.d("correctedCountStr", correctedCountStr);
+//                ((TextView) findViewById(R.id.testscoretxt1)).setText(correctedCountStr.substring(0, 1));
+//                ((TextView) findViewById(R.id.testscoretxt2)).setText(correctedCountStr.substring(1, 2));
+//                ((TextView) findViewById(R.id.testscoretxt3)).setText(correctedCountStr.substring(2, 3));
+//            }
         }
         @JavascriptInterface
         public void AddQuestionCount(String question) {
-            if (!isTestAgain) {
+//            if (!isTestAgain)
+            {
                 Log.d("testQuestionCount", question);
                 if(totalQuestion == 100) {
                     ((LearnActivity) MyApplication.getInstance().getCurrentActivity()).finishLevelTest();
@@ -1378,12 +1403,13 @@ public class LearnActivity extends BaseActivity {
                 String questionCountStr = String.format("%03d", totalQuestion);
                 Log.d("testQuestionCount", questionCountStr);
                 ((TextView) findViewById(R.id.testquestioncount)).setText(questionCountStr + "/100");
-            }else{
-                totalQuestion = 1;
-                String questionCountStr = String.format("%03d", totalQuestion);
-                Log.d("testQuestionCount", questionCountStr);
-                ((TextView) findViewById(R.id.testquestioncount)).setText(questionCountStr + "/100");
             }
+//            else{
+//                totalQuestion = 1;
+//                String questionCountStr = String.format("%03d", totalQuestion);
+//                Log.d("testQuestionCount", questionCountStr);
+//                ((TextView) findViewById(R.id.testquestioncount)).setText(questionCountStr + "/100");
+//            }
         }
     }
 
@@ -1513,6 +1539,9 @@ public class LearnActivity extends BaseActivity {
     }
     private void PerformTest()
     {
+        partPoint = 0;
+        partQuestion = 0;
+
         totalPot = 0;
         String correctedCountStr = String.format("%03d", totalPot);
         Log.d("correctedCountStr", correctedCountStr);
